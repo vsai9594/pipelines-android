@@ -22,7 +22,7 @@ steps:
   displayName: 'GradleBuil'
 - task: CopyFiles@2
   inputs:
-    Contents: '**/*.apk'
+    Contents: '**/*'
     TargetFolder: '$(build.artifactstagingdirectory)'
   displayName: 'Copy Files to Artifact Directory'
 - task: PublishBuildArtifacts@1
